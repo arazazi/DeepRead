@@ -1,6 +1,4 @@
 # DeepRead
-Since you are a Master's student in Cybersecurity and have been actively focusing on Cyber Threat Intelligence, this README is designed to highlight the technical sophistication and forensic utility of **DeepRead V4.0**.
-
 ```text
                                                                                 
 @@@@@@@   @@@@@@@@  @@@@@@@@  @@@@@@@   @@@@@@@   @@@@@@@@   @@@@@@   @@@@@@@   
@@ -14,7 +12,7 @@ Since you are a Master's student in Cybersecurity and have been actively focusin
  :::: ::   :: ::::   :: ::::   ::       ::   :::   :: ::::  ::   :::   :::: ::  
 :: :  :   : :: ::   : :: ::    :         :   : :  : :: ::    :   : :  :: :  :
 
-
+```
 ---
 
 # 📖 DEEPREAD: The Infinite Decoder (V4.0)
