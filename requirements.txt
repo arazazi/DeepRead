@@ -1,0 +1,3 @@
+# Core requirements for DeepRead V4.0
+google-genai
+chardet
