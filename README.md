@@ -13,9 +13,8 @@
 :: :  :   : :: ::   : :: ::    :         :   : :  : :: ::    :   : :  :: :  :
 
 ```
----
 
-# 📖 DEEPREAD: The Infinite Decoder (V4.0)
+## 📖 DEEPREAD: The Infinite Decoder (V4.0)
 
 **DeepRead** is an ultimate universal encoding detector and decoder designed for security researchers, CTF players, and forensic analysts. It automates the identification and decryption of over 50+ encoding methods, ranging from standard Base encodings to complex classical ciphers and esoteric programming languages.
 
@@ -32,11 +31,11 @@
 
 * **Recursive JSON Decoding:** Processes entire JSON files and decodes every string value found within the structure.
 
-## 🛠️ Installation
+## 🛠️ Installation & Global Linux Setup
 
 1. **Clone the repository:**
 ```bash
-git clone https://github.com/arazazi/DeepRead.git
+git clone [https://github.com/arazazi/DeepRead.git](https://github.com/arazazi/DeepRead.git)
 cd DeepRead
 
 ```
@@ -49,36 +48,50 @@ pip install google-genai chardet
 ```
 
 
-3. **Setup AI (Optional):**
+3. **Use DeepRead from anywhere (Global Command):**
+To use `deepread` from any directory in your Linux terminal without typing `python3`, run these commands:
+```bash
+# 1. Make the script executable
+chmod +x deepread.py
+
+# 2. Create a symbolic link in your local bin
+sudo ln -s "$(pwd)/deepread.py" /usr/local/bin/deepread
+
+```
+
+
+4. **Setup AI (Optional):**
 To use the `--gemini` analysis, place your API key in a file named `.gemini_key` or set the `GEMINI_API_KEY` environment variable.
 
 ## 💻 Usage
 
-### Basic String Analysis
+Once installed globally, you can call the tool from any folder:
+
+**Basic String Analysis**
 
 ```bash
-python3 deepread.py -t "SGVsbG8gV29ybGQ=" -d
+deepread -t "SGVsbG8gV29ybGQ=" -d
 
 ```
 
-### Multi-Layer Decoding with AI Post-Processing
+**Multi-Layer Decoding with AI Post-Processing**
 
 ```bash
-python3 deepread.py -t "NGU1NDU0NTQzZDMz" -m -g
+deepread -t "NGU1NDU0NTQzZDMz" -m -g
 
 ```
 
-### Forensic UUID Extraction
+**Forensic UUID Extraction**
 
 ```bash
-python3 deepread.py -u "550e8400-e29b-41d4-a716-446655440000"
+deepread -u "550e8400-e29b-41d4-a716-446655440000"
 
 ```
 
-### Recursive JSON File Decoding
+**Recursive JSON File Decoding**
 
 ```bash
-python3 deepread.py -j data_dump.json
+deepread -j data_dump.json
 
 ```
 
@@ -98,5 +111,5 @@ This tool is intended for educational purposes, Capture The Flag (CTF) challenge
 ---
 
 **Author:** Azazi
-**Focus:** Cybersecurity & Cyber Threat Intelligence
 
+**Focus:** Cybersecurity & Cyber Threat Intelligence
