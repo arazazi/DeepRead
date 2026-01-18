@@ -1,6 +1,20 @@
 # DeepRead
 Since you are a Master's student in Cybersecurity and have been actively focusing on Cyber Threat Intelligence, this README is designed to highlight the technical sophistication and forensic utility of **DeepRead V4.0**.
 
+                                                                                
+@@@@@@@   @@@@@@@@  @@@@@@@@  @@@@@@@   @@@@@@@   @@@@@@@@   @@@@@@   @@@@@@@   
+@@@@@@@@  @@@@@@@@  @@@@@@@@  @@@@@@@@  @@@@@@@@  @@@@@@@@  @@@@@@@@  @@@@@@@@  
+@@!  @@@  @@!       @@!       @@!  @@@  @@!  @@@  @@!       @@!  @@@  @@!  @@@  
+!@!  @!@  !@!       !@!       !@!  @!@  !@!  @!@  !@!       !@!  @!@  !@!  @!@  
+@!@  !@!  @!!!:!    @!!!:!    @!@@!@!   @!@!!@!   @!!!:!    @!@!@!@!  @!@  !@!  
+!@!  !!!  !!!!!:    !!!!!:    !!@!!!    !!@!@!    !!!!!:    !!!@!!!!  !@!  !!!  
+!!:  !!!  !!:       !!:       !!:       !!: :!!   !!:       !!:  !!!  !!:  !!!  
+:!:  !:!  :!:       :!:       :!:       :!:  !:!  :!:       :!:  !:!  :!:  !:!  
+ :::: ::   :: ::::   :: ::::   ::       ::   :::   :: ::::  ::   :::   :::: ::  
+:: :  :   : :: ::   : :: ::    :         :   : :  : :: ::    :   : :  :: :  :   
+                                                                                
+
+
 ---
 
 # 📖 DEEPREAD: The Infinite Decoder (V4.0)
@@ -24,7 +38,7 @@ Since you are a Master's student in Cybersecurity and have been actively focusin
 
 1. **Clone the repository:**
 ```bash
-git clone https://github.com/your-username/DeepRead.git
+git clone https://github.com/arazazi/DeepRead.git
 cd DeepRead
 
 ```
@@ -45,28 +59,28 @@ To use the `--gemini` analysis, place your API key in a file named `.gemini_key`
 ### Basic String Analysis
 
 ```bash
-python3 deepreadV4.py -t "SGVsbG8gV29ybGQ=" -d
+python3 deepread.py -t "SGVsbG8gV29ybGQ=" -d
 
 ```
 
 ### Multi-Layer Decoding with AI Post-Processing
 
 ```bash
-python3 deepreadV4.py -t "NGU1NDU0NTQzZDMz" -m -g
+python3 deepread.py -t "NGU1NDU0NTQzZDMz" -m -g
 
 ```
 
 ### Forensic UUID Extraction
 
 ```bash
-python3 deepreadV4.py -u "550e8400-e29b-41d4-a716-446655440000"
+python3 deepread.py -u "550e8400-e29b-41d4-a716-446655440000"
 
 ```
 
 ### Recursive JSON File Decoding
 
 ```bash
-python3 deepreadV4.py -j data_dump.json
+python3 deepread.py -j data_dump.json
 
 ```
 
