@@ -43,8 +43,7 @@ cd DeepRead
 
 2. **Install dependencies:**
 ```bash
-pip install google-genai chardet
-
+pip install -r requirements.txt
 ```
 
 
